@@ -7,4 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-kursik';
-}
+
+  inputText = 'Tekst';
+  maxLengt = 5;
+  colorClass = 'color';
+  logUrl = '';
+
+  isDisable = true;
+
+  constructor() {
+    setTimeout(() => {
+
+      this.isDisable = false;
+
+    }, 3000);
+  }
+
+  change() {
+    this.inputText = 'Zmiana tekstu i koloru';
+    this.maxLengt = 10;
+    this.colorClass = 'color2';
+    this.logUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
+  }
+
+} 
+ 
