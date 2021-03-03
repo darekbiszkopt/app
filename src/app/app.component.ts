@@ -50,12 +50,5 @@ export class AppComponent {
     this.isDisable = false;
   }
 
-  saveP(event) {
-    this.profession = event.target.value;
-  }
-
-  saveS(event){
-    this.skill = event.target.value;
-  }
 
 }
