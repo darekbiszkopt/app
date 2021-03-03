@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+  newTask: string;
+
+  taskList: Array<string> = [];
+
+  add() {
+    this.taskList.push(this.newTask);
+  }
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {
