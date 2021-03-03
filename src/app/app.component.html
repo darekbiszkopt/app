@@ -21,3 +21,17 @@
 <img [src]="logUrl">
 <input [maxLength]="maxLengt" [value]="inputText">
 <button [disabled]="isDisable" (click)= "change()" >Dodaj</button>
+
+
+<h3>
+
+<input [disabled]="isDisable" (focus)="onFocus()">
+<br>
+<input [disabled]="isDisable" (click)="onClick($event)">
+<br>
+<input [disabled]="isDisable" (mousemove)="onMouseMove($event)" >
+<br>
+<input [disabled]="isDisable"  (paste)="onPaste()">{{inputText}}
+<br>
+</h3>
+<button (click)="change2()"> Zmiana </button>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +16,7 @@ export class AppComponent {
   isDisable = true;
 
   constructor() {
-    setTimeout(() => {
 
-      this.isDisable = false;
-
-    }, 3000);
   }
 
   change() {
@@ -28,6 +24,31 @@ export class AppComponent {
     this.maxLengt = 10;
     this.colorClass = 'color2';
     this.logUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
+  }
+
+  onFocus(){
+    this.colorClass = 'color2';
+  }
+
+
+  onClick(event){
+    console.log(event);
+  }
+
+  onMouseMove(event) {
+    console.log('x: ' + event.clientX + ' , y: ' + event.clientY);
+  }
+
+  onPaste()  {
+
+    this.inputText = 'Nie wklejaj, wpisz!';
+
+  }
+
+  change2() {
+
+    this.isDisable = false;
+
   }
 
 }
