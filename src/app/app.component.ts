@@ -30,5 +30,4 @@ export class AppComponent {
     this.logUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
   }
 
-} 
- 
+}

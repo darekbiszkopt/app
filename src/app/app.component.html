@@ -17,6 +17,7 @@
   </li>
 </ul>
 
-<h3>ANGULAR kurs - property binding</h3>
-<input>
-<button>Dodaj</button>
+<h3 [className]="colorClass">ANGULAR kurs - property binding</h3>
+<img [src]="logUrl">
+<input [maxLength]="maxLengt" [value]="inputText">
+<button [disabled]="isDisable" (click)= "change()" >Dodaj</button>
