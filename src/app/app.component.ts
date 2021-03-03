@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-kursik';
 
+  profession = 'programista';
+  skill = 'Angular';
+
+
+  title = 'angular-kursik';
   inputText = 'Tekst';
   maxLengt = 5;
   colorClass = 'color';
@@ -30,7 +34,6 @@ export class AppComponent {
     this.colorClass = 'color2';
   }
 
-
   onClick(event){
     console.log(event);
   }
@@ -40,15 +43,19 @@ export class AppComponent {
   }
 
   onPaste()  {
-
     this.inputText = 'Nie wklejaj, wpisz!';
-
   }
 
   change2() {
-
     this.isDisable = false;
+  }
 
+  saveP(event) {
+    this.profession = event.target.value;
+  }
+
+  saveS(event){
+    this.skill = event.target.value;
   }
 
 }
