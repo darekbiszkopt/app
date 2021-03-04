@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
 
+
+  taskList = ['Sprzatanie', 'Gotowanie', 'Nauka Angulara'];
+
+  selected(task: string): void{
+    console.log(task);
+  }
+
   profession = 'programista';
   skill = 'Angular';
 
