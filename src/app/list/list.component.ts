@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  newTask: string;
+
   taskList: Array<string> = [];
   taskDone: Array<string> = [];
 
-  add() {
-    this.taskList.push(this.newTask);
-    this.newTask = '';
-    console.log(this.taskList);
+  add(task: string) {
+    this.taskList.push(task);
+
+
   }
 
   remove(task: string) {

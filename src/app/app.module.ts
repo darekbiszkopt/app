@@ -8,6 +8,7 @@ import { TestComponent } from './test/test.component';
 import { Test2Component } from './test2/test2.component';
 import { ListComponent } from './list/list.component';
 import { ChildComponent } from './child/child.component';
+import { AddTaskComponent } from './list/add-task/add-task.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChildComponent } from './child/child.component';
     TestComponent,
     Test2Component,
     ListComponent,
-    ChildComponent
+    ChildComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
