@@ -8,27 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent implements OnInit {
 
 
-  taskList: Array<string> = [];
-  taskDone: Array<string> = [];
+  tasksList: Array<string> = [];
+  tasksDone: Array<string> = [];
 
   add(task: string) {
-    this.taskList.push(task);
+    this.tasksList.push(task);
 
 
   }
 
   remove(task: string) {
 
-    this.taskList = this.taskList.filter(e => e !== task);
+    this.tasksList = this.tasksList.filter(e => e !== task);
 
   }
 
   done(task: string) {
 
-    this.taskDone.push(task);
-    this.remove(task)
-    console.log(this.taskDone)
-
+    this.tasksDone.push(task);
+    this.remove(task);
   }
 
 
